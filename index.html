@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNGx First Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+ <!-- Slack Name -->
+    <div id="about-itern">
+        <div class="itern-info">
+            <!-- Slack Display Picture -->
+            <img  src="/images/Sulaimon 1.jpg" width="100px" class="itern-image" data-testid="slackDisplayImage">
+            <h1 data-testid="slackUserName" class="itern-name general">Kareem Sulaimon</h1>
+        </div>
+        <p data-testid="myTrack" class="role">Front-end Developer Intern</p>
+     <div class="itern-more-info">
+        <p data-testid="currentDayOftheWeek" class="timer" id="day"></p>
+        <span class="dash"></span>
+        <p data-testid="currentUTCTime" class="timer"  id="time"></p>
+        <span class="dash"></span>
+        <p>
+             <a href="https://github.com/KareemSulaimon" data-testid="github
+            URL" class="githubURL"> Github Repository</a></p>
+       
+      </div> 
+</div>
+ 
+ <script defer>
+  
+  
+
+  function myTimer() {
+  const currentDay = new Date()
+  const daysOftheWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+  const day = daysOftheWeek[currentDay.getDay()]
+  const time = currentDay.toLocaleTimeString('en-NG', {hour12: true})
+  
+  document.getElementById("day").textContent = day
+  document.getElementById("time").textContent = time
+  }
+
+  setInterval(myTimer, 1000);
+ </script>
+</body>
+</html>
