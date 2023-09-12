@@ -68,12 +68,13 @@
         border-right: 2px solid black;
     }
 
-    .githubURL {
-        color: rgb(6, 5, 5);
-        margin-top: 10px;
-        
-    }
 
+    .github {
+        display: flex;
+        align-items: center;
+        color: rgb(45, 21, 116); 
+    }
+   
     @media screen {
         
     }
