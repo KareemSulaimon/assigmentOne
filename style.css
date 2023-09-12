@@ -16,10 +16,10 @@
     #about-itern {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;  
         margin: auto;
         max-width: 500px;
-        height: 600px;
+        height: 100vh;
         justify-content: center;
         background: rgb(204, 141, 59);
         }
@@ -36,8 +36,8 @@
 
     .itern-name {
         color: rgb(6, 5, 5);
-        font-size: 30px;
-         margin-bottom: 10px;
+        font-size: 40px;
+        margin-bottom: 10px;
     }
 
     .itern-image {
@@ -47,7 +47,7 @@
     .itern-more-info {
         display: flex;
         align-items: center;
-        /* width: 100%; */
+       
     }
 
     .role {
@@ -71,5 +71,9 @@
     .githubURL {
         color: rgb(6, 5, 5);
         margin-top: 10px;
+        
+    }
+
+    @media screen {
         
     }
