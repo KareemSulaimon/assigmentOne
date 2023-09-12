@@ -3,46 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Description of your webpage">
     <title>HNGx First Assignment</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
 </head>
 <body>
- 
- <!-- Slack Name -->
-    <div id="about-itern">
-        <div class="itern-info">
-            <!-- Slack Display Picture -->
-            <img  src="/images/sulaimon.png" width="250px" class="itern-image" data-testid="slackDisplayImage">
-            <h1 data-testid="slackUserName" class="itern-name general">Sulaimon</h1>
+    <header>
+        <!-- Slack Name -->
+        <div id="about-itern">
+            <div class="itern-info">
+                <!-- Slack Display Picture -->
+                <img src="/images/sulaimon.png" width="250px" class="itern-image" alt="Sulaimon's Display Picture" data-testid="slackDisplayImage">
+                <h1 data-testid="slackUserName" class="itern-name general">Sulaimon</h1>
+            </div>
+            <p data-testid="myTrack" class="role">Frontend</p>
+            <div class="itern-more-info">
+                <p data-testid="currentDayOfTheWeek" class="timer" id="day"></p>
+                <span class="dash"></span>
+                <p data-testid="currentUTCTime" class="timer" id="time"></p>
+                <span class="dash"></span>
+                <a href="https://github.com/KareemSulaimon/assigmentOne" class="github" data-testid="githubURL">
+                    <img src="/images/githubIcon.png" width="25px" alt="GitHub icon" data-testid="github icon"> Github Repository
+                </a>
+            </div>
         </div>
-        <p data-testid="myTrack" class="role">Frontend</p>
-       <div class="itern-more-info">
-        <p data-testid="currentDayOfTheWeek" class="timer" id="day"></p>
-        <span class="dash"></span>
-        <p data-testid="currentUTCTime" class="timer"  id="time"></p>
-        <span class="dash"></span>
-        <a href="https://github.com/KareemSulaimon/assigmentOne" class="github" data-testid="githubURL" class="githubURL"> 
-            <img src="/images/githubIcon.png" width="25px" alt="github icon"  data-testid="github icon"> Github Repository
-        </a>
-       
-      </div> 
-</div>
- 
- <script defer>
-  
-  
+    </header>
 
-  function myTimer() {
-  const currentDay = new Date()
-  const daysOftheWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-  const day = daysOftheWeek[currentDay.getDay()]
-  const time = currentDay.getTime()
-  
-  document.getElementById("day").textContent = day
-  document.getElementById("time").textContent = time
-  }
-
-  setInterval(myTimer, 1000);
- </script>
+    
 </body>
 </html>
